@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <title>Portfolio Website - Shanmukha B</title>
+    </head>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+#logo {
+   color:white;
+   font-size:25px;
+   font-weight:500;
+   margin-left:5%;
+}
+.navbar {
+    background-image:linear-gradient(to bottom right,#4ca1af , #c4e0e5);
+}
+.icon-color {
+    background-color: white;
+}
+.homesection{
+     background-image:linear-gradient(to bottom right,#4ca1af , #c4e0e5);
+     height:105vh;
+    background-size:cover;
+}
+.nav-item{
+  font-size:18px;
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  margin-left:35px;
+}
+.nav-item:hover{
+  background:linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+}
+.navbar-nav a.active,
+.nav-item:hover{
+     background:linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+.button {
+  color: #0c0521;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: white;
+    width: 160px;
+    height: 50px;
+    border-width: 0;
+    border-radius: 20px;
+    margin-right: 10px;
+    text-align:center;
+}
+.button:hover{
+  background:linear-gradient(to right,#EE9CA7 , #FFDDE1);
+  text-decoration:none;
+  color:white;
+}
+.btn {
+  font-weight:600;
+  color:#0c0521;
+  font-size:15px;
+  background-color:white;
+  width: 80px;
+  height: 35px;
+  border-width:0px;
+  border-radius: 6px;
+ margin-left:35px;
+ margin-top:5px;
+}
+.btn:hover{
+  background:linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+  color:white;
+}
+.title{
+    font-size:25px;
+}
+.name{
+    color:orangered;
+}
+.img{
+    margin-top:10%;
+    height:360px;
+    width:360x;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+     border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+    border-width:0;
+  }
+  .text{
+    margin-top:10%;
+  }
+  .icon1{
+    font-size:25px;
+    color:white;
+}
+.icon-container {
+    background-color:transparent;
+   border-color:white;
+   border-style:solid;
+    border-radius: 40px;
+    margin:6px;
+    padding-top: 16px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    padding-left: 16px;
+    border-width:0.6px;
+}
+.icon-container:hover{
+    background:linear-gradient(to right,#EE9CA7 , #FFDDE1);
+    text-decoration:none;
+
+}
+
+
+  .aboutmesection {
+    background-image:radial-gradient(#FDFCFB , #E2D1C3);
+}
+.heading1 {
+   font-family: "Roboto";
+   font-size: 36px;
+   color: #0c0521;
+   font-weight: bold;
+}
+.img2 {
+   margin-top:15%;
+    height:360px;
+    width:360x;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+     border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+   border-width:0;
+}
+.paragraph {
+  color:#1f2933;
+  font-size:20px;
+  font-weight:500;
+}
+
+
+.skills-section {
+    background-image:linear-gradient(to left,#4ca1af , #c4e0e5);
+    height:80vh;
+    background-size:cover;
+}
+.heading3 {
+    font-family: "Roboto";
+    font-size: 36px;
+    color: #0c0521;
+    font-weight: bold;
+    margin-bottom:13%;
+ }
+.skills-card {
+   background-color: #323f4b;
+   border-radius: 8px;
+   border-width: 0px;
+   width:200px;
+   padding:10px;
+}
+.skills-card-image {
+   width: 75px;
+   height: 75px;
+}
+.skills-card-title {
+   color: white;
+   font-family: "roboto";
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.projects-section {
+    background-image:radial-gradient(#FDFCFB , #E2D1C3);
+}
+.card-container {
+   background-color: #323f4b;
+   border-radius: 8px;
+   width:400px;
+}
+
+.img3 {
+   width: 100%;
+}
+
+.p {
+   font-family: "Roboto";
+   font-size: 15px;
+   color: #E2D1C3;
+   font-weight: 500;
+}
+
+.card-heading {
+   font-family: "Roboto";
+   font-size: 25px;
+   color: white;
+   font-weight: 500;
+}
+
+.para {
+   font-family: "Roboto";
+   font-size: 18px;
+   color:#E2D1C3;
+}
+
+.projects-card-link {
+   color: #cced00;
+   font-family: "Roboto";
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.services-section {
+    background-image:linear-gradient(to right,#4ca1af , #c4e0e5);
+}
+
+.h2 {
+  font-family: "Roboto";
+  font-size: 39px;
+  color: white;
+  font-weight: bold;
+}
+
+.card-container {
+  background-color: #323f4b;
+  border-radius: 8px;
+  width:300px;
+}
+
+.img4 {
+  height: 65px;
+  width: 65px;
+}
+
+
+.contact-section{
+    background-image:radial-gradient(#FDFCFB , #E2D1C3);
+}
+
+.icon {
+    color: #5a7184;
+    font-size: 18px;
+}
+
+.para1 {
+    font-family: "Roboto";
+    color:#323f4b;
+    font-size: 14px;
+}
+
+.heading2{
+    font-size:20px;
+    color:orangered;
+    font-weight: 500;
+}
+
+
+  </style>
+  <body>
+     <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="logo" href="#">
+               Portfolio.
+            </a>
+            <button class="navbar-toggler icon-color" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active text-white"  href="#homesection"> Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link text-white" href="#aboutmeSection" >About Me</a>
+                    <a class="nav-item nav-link text-white" href="#skillsSection" >Skills</a>
+                    <a class="nav-item nav-link text-white" href="#projectsSection" >projects</a>
+                    <a class="nav-item nav-link text-white" href="#servicesSection" >Services</a>
+                    <a class="nav-item nav-link text-white" href="#contactSection" >Contact</a>
+                    <!-- <a href="#" class="btn">Hire Me</a> -->
+                    <form action="mailto:bussapagarishannu@gmail.com" method="post" enctype="text/plain" >
+                        <p><button  type="submit" class="btn">Hire Me</button></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+     
+    <div class="homesection d-flex flex-column justify-content-center pl-5" id="homesection">
+     <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 order-1 order-md-2 ">
+                <img src="https://i.imgur.com/oxljhM4.jpeg" class="img mb-3 " />
+              </div>
+                <div class="col-12  text order-2 order-md-1 col-md-8" >
+                <h1 class="title">Hi I'm <span class="name">Busappagari Shanmukha</span></h1>
+                <h1 class="heading"> <span class="name">P</span>YTHON <span class="name">D</span>EVELOPER</h1>
+                <!-- <button class="button mt-3">Dowmload CV</button> -->
+                <button class="button mt-3"><a href="https://drive.google.com/file/d/14avUsd6vx1mhJMi8BfHHrp1JVvvymK4r/view?usp=sharing" target="_blank" download="Shanmukha_s_resume_Fresher .pdf" >Download CV</a></button>
+
+                <div class="d-flex flex-row mt-4">
+                <div class="icon-container">
+                    <i><a href="https://github.com/shannub556-marolix" target="_blank" class="fa fa-github icon1"></a></i>
+                </div>
+                <div class="icon-container">
+                    <i><a href="https://www.linkedin.com/in/busappagari-shanmukha-33bb77192/" target="_blank" class="fab fa-linkedin icon1"></a></i>
+
+                </div>
+                
+                
+            </div>          
+        </div>
+     </div>
+  </div>
+ </div>
+             
+    <div class="aboutmesection pt-5 pb-5  d-flex flex-column justify-content-cente" id="aboutmeSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading1 mb-3">About Me</h1>
+                </div>
+                <div class="col-12  col-md-4 order-1 order-md-1 d-flex flex-row justify-content-between">
+                    <img src="https://i.imgur.com/oxljhM4.jpeg" class="img2 " />
+                </div>
+                    
+                <div class="col-12  text order-2 order-md-2 col-md-8 ">
+                <p class="paragraph">Driven Python Developer and Technical Specialist with a passion for crafting innovative solutions that drive organizational growth. With hands-on experience in developing robust HRMS and weather applications, I thrive in dynamic environments where technical challenges fuel my creativity. My tenure at Marolix Technology Solutions Pvt Ltd honed my skills in Python, Django, and RESTful APIs, enabling me to contribute effectively to complex projects.<br />
+                    <br />My goal is to leverage my expertise to work collaboratively in an environment that fosters professional growth and innovation. I am committed to continuously expanding my skill set while delivering impactful solutions that drive organizational success. As a former Sports Captain and district-level Badminton player, I bring strong leadership and teamwork skills to every project.   
+                    I am eager to connect with like-minded professionals, explore new opportunities, and contribute to the advancement of technology in meaningful ways.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="skills-section pt-5 pb-5" id="skillsSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-22">
+                        <h1 class="heading3">Skills :</h1>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shadow skills-card text-center mb-5 ml-4">
+                            <img src="https://i.imgur.com/UTeIvDz.jpeg" class="skills-card-image pt-3" />
+                            <h1 class="skills-card-title pt-3 pb-3 ">PYTHON</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shadow skills-card text-center mb-5 ml-4">
+                            <img src="https://i.imgur.com/fnIZ1Ep.jpeg" class="skills-card-image pt-3" />
+                            <h1 class="skills-card-title pt-3 pb-3 ">DJANGO</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="shadow skills-card text-center mb-5 ml-4">
+                            <img src="https://i.imgur.com/WnRXC20.png" class="skills-card-image pt-3" />
+                            <h1 class="skills-card-title pt-3 pb-3">HTML</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shadow skills-card text-center mb-5 ml-4">
+                            <img src="https://i.imgur.com/sog8pDL.png" class="skills-card-image pt-3" />
+                            <h1 class="skills-card-title pt-3 pb-3">CSS</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shadow skills-card text-center mb-5 ml-4">
+                            <img src="https://i.imgur.com/6yY8orD.png" class="skills-card-image pt-3" />
+                            <h1 class="skills-card-title pt-3 pb-3">Bootstrap</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shadow skills-card text-center md-5 ml-4">
+                            <img src="https://i.imgur.com/NCfxbfg.jpeg" class="skills-card-image pt-3" />
+                            <h1 class="skills-card-title pt-3 pb-3">DBMS</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shadow skills-card text-center mb-5 ml-4">
+                            <img src="https://i.imgur.com/Nfo8pb7.jpeg" class="skills-card-image pt-3" />
+                            <h1 class="skills-card-title pt-3 pb-3 ">POSTGRESQL</h1>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+       
+        
+    <div class="projects-section pt-5 pb-5" id="projectsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading1 mb-5">My Projects </h1>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card-container mb-3 ml-5">
+                        <img src="https://i.imgur.com/rrgCjMT.png" class="img3" />
+                        <div class="p-3">
+                            <p class="p">Web design</p>
+                            <h1 class="card-heading">Django User Authentication and Profile Management System</h1>
+                            <p class="para">A robust and secure Django-based User Management System...</p>
+                            <a href="https://shanmukhab.pythonanywhere.com/" target="_blank" class="projects-card-link">
+                                Project link
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#cced00" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card-container mb-3 ml-5">
+                        <img src="https://i.imgur.com/9SS8fni.png" class="img3" />
+                        <div class=" p-3">
+                            <p class="p">Web design</p>
+                            <h1 class="card-heading">WEATHER APPLICATION</h1>
+                            <p class="para">A Weather Application built using Django and integrating the OpenWeatherMap API ...</p>
+                            <a href="https://shannub556.pythonanywhere.com/" target="_blank" class="projects-card-link">
+                                Project link
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#cced00" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-section pt-5 pb-5" id="servicesSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading1 mb-3">Services</h1>
+                    <h1 class="h2 mb-5 ml-3">What I do</h1>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow card-container  p-3 mb-3">
+                        <img src="https://i.imgur.com/TBRrMbh.png" class="img4 mb-3" />
+                        <h1 class="card-heading">Static Websites</h1>
+                        <p class="para">A Static Website contains Web pages with fixed content.
+                            Each page is developed using HTML and CSS and displays the same information
+                            to every visitor.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="shadow card-container  p-3 mb-3">
+                        <img src="https://i.imgur.com/bvDGunE.png" class="img4 mb-3" />
+                        <h1 class="card-heading">Responsive Web design</h1>
+                        <p class="para">Responsive Web design is the approach that suggests that
+                            design and development should respond to the user's behaviour and environment
+                            based on screen size, platform and orientation.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="shadow card-container  p-3 mb-3">
+                        <img src="https://i.imgur.com/YWQHQ2R.png" class="img4 mb-3" />
+                        <h1 class="card-heading">Customisable Layouts</h1>
+                        <p class="para">Customisable sites are templates with set layouts. You may be
+                            able to change photos and colors, but your site will look similar to many
+                            other sites due to the template. The same goes for...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section pt-5 pb-5" id="contactSection">
+        <div class="container">
+            <div class="row">   
+                <div class="col-12 mb-3">
+                    <h1 class="heading">Contact me</h1>
+                </div>  
+                <div class="col-12 col-md-3 mb-3 ml-5">
+                    <h1 class="heading2">Phone No.</h1>
+                    <div>
+                        <i class="fas fa-phone icon "></i>
+                        <span class="para1 ml-2">9550685733</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3 ml-5">
+                    <h1 class="heading2">E-mail</h1>
+                    <div>
+                        <i class="fa fa-envelope icon"></i>
+                        <span class="para1 ml-2">bussapagarishannu@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3 ml-5">
+                    <h1 class="heading2">Address</h1>
+                    <div>
+                        <i class="fa fa-map-location-dot icon"></i>
+                        <span class="para1 ml-2">Kormangala, Bengaluru, India.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
